@@ -1,0 +1,22 @@
+# Most-similar-string-to-given-query
+In this project I am using the tf - idf algorithm to find the similarity of two strings.
+I am given a text file with 2000 random generated tweets.
+Given a query that contains key words find the most similar tweet of the .txt file to this query.
+Here is some information on how TF-IDF algorithm works: https://en.wikipedia.org/wiki/Tf%E2%80%93idf
+
+Synopsis of the algorithm:
+    A string is represented as a vector. Every word of the string represents a dimension of this vector.
+    So the given query can be represented as a vector as well.
+    For every unique term(non-duplicate words) of the query, we count its term frequency(TF).
+        Term frequency: How many times a word appears in the string.
+    Then, for every unique term of the query we count its Inverse Document Frequency(IDF).
+    Inverse Document Frequency: How many strings(in our case how many tweets of the txt file) contain the specific word.
+        In the end to find the similarity of two strings we calculate their cosine.
+        One of two strings must be the query, the other one is the tweets from the file.
+            Eg. if the text file contains 5 tweets(document1, document2, document3, document4, document5):
+                For document doc : file
+                    calculate cosine(query, doc).
+        The document with the highest cosine value is the most similar to our query.
+        
+        
+-----------------------------------------------------------------------------------------------------------------------------------------------
