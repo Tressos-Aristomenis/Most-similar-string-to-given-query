@@ -17,6 +17,6 @@ Synopsis of the algorithm:
                 For document doc : file
                     calculate cosine(query, doc).
         The document with the highest cosine value is the most similar to our query.
-        
+        The method of finding the similarity of strings using cosine is called cosine-similarity.
         
 -----------------------------------------------------------------------------------------------------------------------------------------------
