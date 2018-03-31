@@ -3,7 +3,7 @@
 ~ I am given a text file with 2000 random generated tweets.
 ~ Given a query that contains key words find the most similar tweet of the .txt file to this query.
 
-Synopsis of the algorithm:
+The algorithm:
     A string is represented as a vector. Every word of the string represents a dimension of this vector.
     So the given query can be represented as a vector as well.
     For every unique term(non-duplicate words) of the query, we count its term frequency(TF).
